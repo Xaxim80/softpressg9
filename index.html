@@ -6,11 +6,26 @@
   <meta name="description" content="Softpress G9 - Ferramentas de Injeção e Sopro. Especialistas em moldes, usinagem e ferramentas plásticas em São Paulo.">
   <title>Softpress G9 - Ferramentas de Injeção e Sopro</title>
 
+  <!-- CSS crítico carrega normalmente -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts: preconnect + carregamento assíncrono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap">
+  </noscript>
+
+  <!-- Font Awesome: carregamento assíncrono -->
+  <link rel="preload" as="style"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
 </head>
 <body>
 
@@ -49,8 +64,8 @@
       <h1 class="hero-title">FERRAMENTAS DE INJEÇÃO<br>E SOPRO</h1>
       <a href="#servicos" class="btn-yellow">SAIBA MAIS</a>
     </div>
-    <a href="#servicos" class="hero-scroll-arrow">
-      <i class="fas fa-chevron-down"></i>
+    <a href="#servicos" class="hero-scroll-arrow" aria-label="Ver nossos serviços">
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
     </a>
   </section>
 
@@ -104,32 +119,32 @@
       <div class="services-dark-grid">
         <div class="service-dark-item fade-in">
           <div class="service-dark-icon"><i class="fas fa-bolt"></i></div>
-          <h4>Eletroersão</h4>
+          <h3>Eletroersão</h3>
           <p>Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta.</p>
         </div>
         <div class="service-dark-item fade-in">
           <div class="service-dark-icon"><i class="fas fa-cog"></i></div>
-          <h4>Torno universal</h4>
+          <h3>Torno universal</h3>
           <p>Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta.</p>
         </div>
         <div class="service-dark-item fade-in">
           <div class="service-dark-icon"><i class="fas fa-wrench"></i></div>
-          <h4>Laminação de Roscas</h4>
+          <h3>Laminação de Roscas</h3>
           <p>Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta.</p>
         </div>
         <div class="service-dark-item fade-in">
           <div class="service-dark-icon"><i class="fas fa-tools"></i></div>
-          <h4>Usinagem de Peças Sob Medida</h4>
+          <h3>Usinagem de Peças Sob Medida</h3>
           <p>Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta.</p>
         </div>
         <div class="service-dark-item fade-in">
           <div class="service-dark-icon"><i class="fas fa-industry"></i></div>
-          <h4>Fabricação de moldes de Plástico</h4>
+          <h3>Fabricação de moldes de Plástico</h3>
           <p>Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta.</p>
         </div>
         <div class="service-dark-item fade-in">
           <div class="service-dark-icon"><i class="fas fa-truck"></i></div>
-          <h4>Atendemos em todo Brasil</h4>
+          <h3>Atendemos em todo Brasil</h3>
           <p>Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta.</p>
         </div>
       </div>
@@ -149,28 +164,28 @@
         <div class="about-item fade-in">
           <div class="about-icon"><i class="fas fa-clock"></i></div>
           <div class="about-text">
-            <h4>TEMPO EM NOSSOS PROJETOS</h4>
+            <h3>TEMPO EM NOSSOS PROJETOS</h3>
             <p>Praesent apuam massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt in dolore porta. Cras ultricies ligula sed magna dictum porta.</p>
           </div>
         </div>
         <div class="about-item fade-in">
           <div class="about-icon"><i class="fas fa-headset"></i></div>
           <div class="about-text">
-            <h4>SUPORTE COMPLETO</h4>
+            <h3>SUPORTE COMPLETO</h3>
             <p>Praesent apuam massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt in dolore porta. Cras ultricies ligula sed magna dictum porta.</p>
           </div>
         </div>
         <div class="about-item fade-in">
           <div class="about-icon"><i class="fas fa-award"></i></div>
           <div class="about-text">
-            <h4>EXPERIÊNCIA PROFISSIONAL</h4>
+            <h3>EXPERIÊNCIA PROFISSIONAL</h3>
             <p>Praesent apuam massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt in dolore porta. Cras ultricies ligula sed magna dictum porta.</p>
           </div>
         </div>
         <div class="about-item fade-in">
           <div class="about-icon"><i class="fas fa-comments"></i></div>
           <div class="about-text">
-            <h4>TIME COMUNICATIVO</h4>
+            <h3>TIME COMUNICATIVO</h3>
             <p>Praesent apuam massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt in dolore porta. Cras ultricies ligula sed magna dictum porta.</p>
           </div>
         </div>
@@ -218,17 +233,17 @@
       <div class="location-grid">
         <div class="location-item fade-in">
           <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
-          <h4>NOSSO ENDEREÇO</h4>
+          <h3>NOSSO ENDEREÇO</h3>
           <p>Rua Dr. Ruy de Azevedo Sodré, 275<br>Vila Santa Catarina – SP</p>
         </div>
         <div class="location-item fade-in">
           <div class="location-icon"><i class="fas fa-envelope"></i></div>
-          <h4>NOSSO E-MAIL</h4>
+          <h3>NOSSO E-MAIL</h3>
           <p><a href="mailto:olilia@softpress-g9.com.br">olilia@softpress-g9.com.br</a></p>
         </div>
         <div class="location-item fade-in">
           <div class="location-icon"><i class="fas fa-phone-alt"></i></div>
-          <h4>NOSSO TELEFONE</h4>
+          <h3>NOSSO TELEFONE</h3>
           <p><a href="tel:+551155637999">(11) 5563-7999</a></p>
         </div>
       </div>

@@ -16,6 +16,8 @@
   --input-border: #ddd;
   --input-color:  #333;
   --input-ph:     #999;
+  /* amarelo escurecido para contraste 4.6:1 em fundo claro */
+  --label-color:  #7a5c00;
 }
 
 [data-theme="dark"] {
@@ -31,6 +33,8 @@
   --input-border: #444;
   --input-color:  #ddd;
   --input-ph:     #666;
+  /* amarelo original tem contraste suficiente em fundo escuro */
+  --label-color:  #f5c800;
 }
 
 /* ---------- Reset & Base ---------- */
@@ -387,7 +391,7 @@ ul  { list-style: none; }
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #f5c800;
+  color: var(--label-color);
   margin-bottom: 8px;
 }
 
@@ -450,7 +454,8 @@ ul  { list-style: none; }
 /* Texto escuro forçado nesta seção — independente do tema */
 .clients-title { color: #111 !important; }
 .clients-desc  { color: #444 !important; }
-.clients-label { color: #f5c800; }   /* amarelo já tem contraste no fundo claro */
+/* fundo sempre claro → usa amarelo escuro para contraste */
+.clients-label { color: #7a5c00 !important; }
 
 .clients-logos {
   display: flex;
@@ -609,7 +614,7 @@ ul  { list-style: none; }
 }
 .footer-social a:hover { background: #f5c800; color: #111; }
 
-.footer-copy { font-size: 0.78rem; color: #555; letter-spacing: 0.5px; }
+.footer-copy { font-size: 0.78rem; color: #999; letter-spacing: 0.5px; }
 
 /* ===================================================
    ANIMAÇÕES FADE-IN
